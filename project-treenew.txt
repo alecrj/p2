@@ -1,0 +1,86 @@
+.
+├── app
+│   ├── _layout.tsx
+│   ├── (tabs)
+│   │   ├── _layout.tsx
+│   │   ├── draw.tsx
+│   │   ├── gallery.tsx
+│   │   ├── home.tsx
+│   │   ├── index.tsx
+│   │   ├── learn.tsx
+│   │   └── profile.tsx
+│   ├── drawing
+│   │   └── [id].tsx
+│   ├── lesson
+│   │   └── [id].tsx
+│   ├── onboarding.tsx
+│   ├── profile
+│   │   └── [id].tsx
+│   └── settings.tsx
+├── app.json
+├── App.tsx
+├── assets
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   └── splash-icon.png
+├── docs
+│   ├── DEV_INSTRUCTIONS.md
+│   └── PROJECT_KNOWLEDGE.md
+├── index.ts
+├── metro.config.js
+├── package-lock.json
+├── package.json
+├── project-treenew.txt
+├── README.md
+├── src
+│   ├── components
+│   │   ├── Canvas
+│   │   │   ├── CanvasWrapper.tsx
+│   │   │   └── DrawingTools.tsx
+│   │   └── Lesson
+│   │       ├── PracticeCanvas.tsx
+│   │       └── TheoryViewer.tsx
+│   ├── constants
+│   │   └── typography.ts
+│   ├── contexts
+│   │   ├── DrawingContext.tsx
+│   │   ├── LearningContext.tsx
+│   │   ├── ThemeContext.tsx
+│   │   └── UserProgressContext.tsx
+│   ├── engines
+│   │   ├── community
+│   │   │   ├── ChallengeSystem.ts
+│   │   │   ├── index.ts
+│   │   │   └── SocialEngine.ts
+│   │   ├── core
+│   │   │   ├── DataManager.ts
+│   │   │   ├── ErrorBoundary.tsx
+│   │   │   ├── ErrorHandler.ts
+│   │   │   ├── EventBus.ts
+│   │   │   ├── index.ts
+│   │   │   └── PerformanceMonitor.ts
+│   │   ├── drawing
+│   │   │   ├── BrushEngine.ts
+│   │   │   ├── index.ts
+│   │   │   ├── PerformanceOptimizer.ts
+│   │   │   └── ProfessionalCanvas.ts
+│   │   ├── learning
+│   │   │   ├── index.ts
+│   │   │   ├── LessonEngine.ts
+│   │   │   ├── ProgressTracker.ts
+│   │   │   └── SkillTreeManager.ts
+│   │   └── user
+│   │       ├── index.ts
+│   │       ├── PortfolioManager.ts
+│   │       ├── ProfileSystem.ts
+│   │       └── ProgressionSystem.ts
+│   └── types
+│       └── index.ts
+├── test-setup.js
+├── tests
+│   └── setup
+│       └── verify-installation.test.js
+└── tsconfig.json
+
+23 directories, 61 files
