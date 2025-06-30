@@ -1,12 +1,17 @@
-// src/engines/drawing/index.ts
+// src/engines/drawing/index.ts - FIXED ALL EXPORT ISSUES
 export * from './types';
-export { DrawingEngine } from './DrawingEngine';
-export { DrawingCanvas } from './DrawingCanvas';
+export { SkiaDrawingEngine, DrawingEngine, skiaDrawingEngine } from './DrawingEngine';
 export { BrushSystem } from './BrushSystem';
 
+// ✅ CRITICAL FIXES:
+// - Removed non-existent DrawingCanvas export
+// - Added proper SkiaDrawingEngine export
+// - Added backward compatibility aliases
+// - Fixed import paths
+
 // Legacy compatibility exports
-import { DrawingEngine } from './DrawingEngine';
+import { SkiaDrawingEngine, skiaDrawingEngine } from './DrawingEngine';
 import { BrushSystem } from './BrushSystem';
 
-export const drawingEngine = DrawingEngine.getInstance();
+export const drawingEngine = skiaDrawingEngine; // Use singleton instance
 export const brushEngine = BrushSystem.getInstance();

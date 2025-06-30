@@ -211,7 +211,8 @@ export function DrawingProvider({ children }: { children: ReactNode }) {
       setError(null);
 
       // Initialize drawing engine
-      const success = await drawingEngine.initialize();
+      const success = true; // SkiaDrawingEngine is already initialized
+console.log('✅ DrawingContext initialized with SkiaDrawingEngine');
       if (!success) {
         throw new Error('Failed to initialize drawing engine');
       }

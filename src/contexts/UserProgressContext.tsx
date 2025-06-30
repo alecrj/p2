@@ -24,8 +24,7 @@ const STORAGE_KEYS = {
 } as const;
 
 // User profile and skill level definitions
-export type SkillLevel = 'beginner' | 'intermediate' | 'advanced';
-
+export type SkillLevel = 'beginner' | 'intermediate' | 'advanced' | 'expert';
 export interface User {
   id: string;
   email?: string;
